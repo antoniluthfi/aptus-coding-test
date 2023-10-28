@@ -12,6 +12,11 @@ module.exports = {
     'no-duplicate-imports': 'error',
     '@typescript-eslint/no-empty-function': 'off',
     'react/prop-types': [0],
+    'react/no-unstable-nested-components': 'off',
+    'import/extensions': 'off',
+    'import/no-extraneous-dependencies': 'off',
+    'no-use-before-define': 'off',
+    '@typescript-eslint/no-use-before-define': 'off',
   },
   parser: '@typescript-eslint/parser',
   parserOptions: {
