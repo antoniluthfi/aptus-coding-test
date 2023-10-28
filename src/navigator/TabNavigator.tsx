@@ -1,20 +1,20 @@
-import Dashboard from '../screens/Dashboard';
-import History from '../screens/History';
-import Home from '../screens/Home';
-import IcDashboard from '../assets/icons/ic_dashboard.svg';
-import IcDashboardActive from '../assets/icons/ic_dashboard_active.svg';
-import IcHistory from '../assets/icons/ic_history.svg';
-import IcHistoryActive from '../assets/icons/ic_history_active.svg';
-import IcHome from '../assets/icons/ic_home.svg';
-import IcHomeActive from '../assets/icons/ic_home_active.svg';
-import IcProfile from '../assets/icons/ic_profile.svg';
-import IcProfileActive from '../assets/icons/ic_profile_active.svg';
-import IcSearch from '../assets/icons/ic_search.svg';
-import IcSearchActive from '../assets/icons/ic_search_active.svg';
-import Profile from '../screens/Profie';
+import Dashboard from 'src/screens/Dashboard';
+import History from 'src/screens/History';
+import Home from 'src/screens/Home';
+import IcDashboard from 'src/assets/icons/ic_dashboard.svg';
+import IcDashboardActive from 'src/assets/icons/ic_dashboard_active.svg';
+import IcHistory from 'src/assets/icons/ic_history.svg';
+import IcHistoryActive from 'src/assets/icons/ic_history_active.svg';
+import IcHome from 'src/assets/icons/ic_home.svg';
+import IcHomeActive from 'src/assets/icons/ic_home_active.svg';
+import IcProfile from 'src/assets/icons/ic_profile.svg';
+import IcProfileActive from 'src/assets/icons/ic_profile_active.svg';
+import IcSearch from 'src/assets/icons/ic_search.svg';
+import IcSearchActive from 'src/assets/icons/ic_search_active.svg';
+import Profile from 'src/screens/Profie';
 import React from 'react';
-import Search from '../screens/Search';
-import {colors} from '../utils/constants';
+import Search from 'src/screens/Search';
+import {colors} from 'src/utils/constants';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 
 const Tab = createBottomTabNavigator();
@@ -70,8 +70,8 @@ export default function TabNavigator() {
         tabBarActiveTintColor: colors.black[900],
         tabBarInactiveTintColor: colors.black[300],
         tabBarStyle: {
-          paddingVertical: 14
-        }
+          paddingVertical: 14,
+        },
       })}>
       <Tab.Screen name="Home" component={Home} />
       <Tab.Screen name="History" component={History} />

@@ -1,9 +1,9 @@
 export const colors = {
   black: {
-    '300': "#B0B0B0",
-    '900': "#3D3D3D"
-  }
-}
+    '300': '#B0B0B0',
+    '900': '#3D3D3D',
+  },
+};
 
 export const fonts = {
   'DMSans-Black': 'DMSans-Black',
@@ -23,5 +23,5 @@ export const fonts = {
   'DMSans-SemiBold': 'DMSans-SemiBold',
   'DMSans-SemiBoldItalic': 'DMSans-SemiBoldItalic',
   'DMSans-Thin': 'DMSans-Thin',
-  'DMSans-ThinItalic': 'DMSans-ThinItalic'
-}
+  'DMSans-ThinItalic': 'DMSans-ThinItalic',
+};
