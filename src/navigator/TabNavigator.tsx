@@ -1,4 +1,4 @@
-import Dashboard from 'src/screens/Dashboard';
+import Dashboard from 'src/screens/dashboard/Dashboard';
 import History from 'src/screens/History';
 import Home from 'src/screens/Home';
 import IcDashboard from 'src/assets/icons/ic_dashboard.svg';
@@ -14,7 +14,7 @@ import IcSearchActive from 'src/assets/icons/ic_search_active.svg';
 import Profile from 'src/screens/Profie';
 import React from 'react';
 import Search from 'src/screens/Search';
-import {colors} from 'src/utils/constants';
+import {colors, fonts} from 'src/utils/constants';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 
 const Tab = createBottomTabNavigator();
@@ -22,9 +22,10 @@ const Tab = createBottomTabNavigator();
 export default function TabNavigator() {
   return (
     <Tab.Navigator
+      initialRouteName="Dashboard"
       screenOptions={({route}) => ({
         headerShown: false,
-        tabBarIcon: ({focused, color, size}) => {
+        tabBarIcon: ({focused}) => {
           if (route.name === 'Home') {
             if (focused) {
               return <IcHomeActive />;
@@ -71,6 +72,9 @@ export default function TabNavigator() {
         tabBarInactiveTintColor: colors.black[300],
         tabBarStyle: {
           paddingVertical: 14,
+        },
+        headerTitleStyle: {
+          fontFamily: fonts['DMSans-Regular'],
         },
       })}>
       <Tab.Screen name="Home" component={Home} />

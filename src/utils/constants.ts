@@ -1,8 +1,17 @@
 export const colors = {
+  white: {
+    '50': 'rgba(255, 255, 255, 0.50)',
+    '100': '#FFFFFF',
+  },
   black: {
     '300': '#B0B0B0',
+    '400': '#888888',
     '900': '#3D3D3D',
   },
+  orange: {
+    '400': '#FF9240',
+  },
+  gray: '#E7E7E7',
 };
 
 export const fonts = {
