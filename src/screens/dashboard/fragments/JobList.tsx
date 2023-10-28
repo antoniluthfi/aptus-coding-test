@@ -61,6 +61,10 @@ export default function JobList() {
       renderItem={renderItem}
       showsVerticalScrollIndicator={false}
       keyExtractor={(_, index) => `job-component-${index}`}
+      initialNumToRender={10}
+      windowSize={5}
+      maxToRenderPerBatch={5}
+      updateCellsBatchingPeriod={30}
     />
   );
 }
