@@ -14,11 +14,15 @@ export default function JobList() {
       <View style={styles.itemContainer}>
         <View style={styles.row}>
           <View style={styles.titleSection}>
-            <View style={styles.dateContainer}>
-              <IcDateChecked />
-              <Text style={styles.createdDate}>
-                {format(parseISO(item.created), 'd MMMM yyyy', {locale: enUS})}
-              </Text>
+            <View style={styles.row}>
+              <View style={styles.dateContainer}>
+                <IcDateChecked />
+                <Text style={styles.createdDate}>
+                  {format(parseISO(item.created), 'd MMMM yyyy', {
+                    locale: enUS,
+                  })}
+                </Text>
+              </View>
             </View>
             <Text style={styles.jobTitle}>{item.title}</Text>
             <Text style={styles.companyName}>{item.company_name}</Text>
